@@ -76,9 +76,9 @@ main {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 3;
   backdrop-filter: blur(5px);
-  display: none;
+  visibility: hidden;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .nav__menu {
@@ -91,17 +91,19 @@ main {
   background-color: #FFFFFF;
   overflow-y: hidden;
   z-index: 5;
+  visibility: hidden;
   transform: translateX(100%);
   transition: all 0.5s ease-in-out;
 }
 
 .overlay.active {
   opacity: 1;
-  display: block;
+  visibility: visible;
 }
 
 .nav__menu.active {
   transform: translateX(0); 
+  visibility: visible;
 }
 
 .grid {
