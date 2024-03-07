@@ -19,6 +19,7 @@ body {
     font-family: Inter;
     padding: 50px 100px 100px 100px;
     position: relative;
+    overflow-x: hidden;
 }
 
 .nav {
